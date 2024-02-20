@@ -67,6 +67,6 @@ INSERT INTO `guild_house_spawns` VALUES
   (NULL, 29493, 16221, 16300.1, 13.1797, 5.17923, 'Ammo & Repair Vendor'),
   (NULL, 28690, 16226.97, 16267.9, 13.15, 4.6533, 'Stable Master'),
 	(NULL, 9858, 16238.2, 16291.8, 22.9306, 1.55386, 'Neutral Auctioneer'),
-	(NULL, 2622, 16229.9, 16300.6, 13.1799, 4.17785, 'Poisons Vendor');
-	(NULL, 190011, 16228.4, 16287, 13.176, 3.62495, 'Reagent Banker');
-	
+	(NULL, 2622, 16229.9, 16300.6, 13.1799, 4.17785, 'Poisons Vendor'),
+	(NULL, 190011, 16228.4, 16287, 13.176, 3.62495, 'Reagent Banker'),
+	(NULL, 190010, 16219.1, 16282.8, 13.176, 0.2124, 'Transmogrifier');

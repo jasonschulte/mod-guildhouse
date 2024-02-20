@@ -71,6 +71,7 @@ public:
         AddGossipItemFor(player, GOSSIP_ICON_TRAINER, "Spawn Primary Profession Trainers", GOSSIP_SENDER_MAIN, 7);
         AddGossipItemFor(player, GOSSIP_ICON_TRAINER, "Spawn Secondary Profession Trainers", GOSSIP_SENDER_MAIN, 8);
         AddGossipItemFor(player, GOSSIP_ICON_TALK, "Spawn Sprirt Healer", GOSSIP_SENDER_MAIN, 6491, "Spawn a Spirit Healer?", GuildHouseSpirit, false);
+        AddGossipItemFor(player, GOSSIP_ICON_INTERACT_1, "Spawn Transmogrifier", GOSSIP_SENDER_MAIN, 190010, "Spawn Transmogrifier?", GuildHouseObject, false);
         SendGossipMenuFor(player, DEFAULT_GOSSIP_MESSAGE, creature->GetGUID());
         return true;
     }
@@ -201,6 +202,10 @@ public:
             break;
         case 190011: // Reagent Banker
             cost = GuildHouseBank;
+            SpawnNPC(action, player);
+            break;
+        case 190010: // Transmogrifier
+            cost = GuildHouseObject;
             SpawnNPC(action, player);
             break;
         case 500032: // Innkeeper
