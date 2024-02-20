@@ -427,7 +427,8 @@ public:
         Map *map = sMapMgr->FindMap(1, 0);
         Creature *creature = new Creature();
 
-        if (!creature->Create(map->GenerateLowGuid<HighGuid::Unit>(), map, player->GetPhaseMaskForSpawn(), entry, 0, posX, posY, posZ, ori))
+        // if (!creature->Create(map->GenerateLowGuid<HighGuid::Unit>(), map, player->GetPhaseMaskForSpawn(), entry, 0, posX, posY, posZ, ori))
+        if (!creature->Create(map->GenerateLowGuid<HighGuid::Unit>(), map, GetGuildPhase(player), entry, 0, posX, posY, posZ, ori))
         {
             delete creature;
             return;

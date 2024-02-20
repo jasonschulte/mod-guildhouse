@@ -65,6 +65,7 @@ public:
         AddGossipItemFor(player, GOSSIP_ICON_TALK, "Spawn Vendor", GOSSIP_SENDER_MAIN, 3);
         AddGossipItemFor(player, GOSSIP_ICON_TALK, "Spawn City Portals / Objects", GOSSIP_SENDER_MAIN, 4);
         AddGossipItemFor(player, GOSSIP_ICON_MONEY_BAG, "Spawn Bank", GOSSIP_SENDER_MAIN, 30605, "Spawn a Banker?", GuildHouseBank, false);
+        AddGossipItemFor(player, GOSSIP_ICON_MONEY_BAG, "Spawn Reagent Bank", GOSSIP_SENDER_MAIN, 190011, "Spawn a Reagent Banker?", GuildHouseBank, false);
         AddGossipItemFor(player, GOSSIP_ICON_MONEY_BAG, "Spawn Auctioneer", GOSSIP_SENDER_MAIN, 6, "Spawn an Auctioneer?", GuildHouseAuctioneer, false);
         AddGossipItemFor(player, GOSSIP_ICON_MONEY_BAG, "Spawn Neutral Auctioneer", GOSSIP_SENDER_MAIN, 9858, "Spawn a Neutral Auctioneer?", GuildHouseAuctioneer, false);
         AddGossipItemFor(player, GOSSIP_ICON_TRAINER, "Spawn Primary Profession Trainers", GOSSIP_SENDER_MAIN, 7);
@@ -195,6 +196,10 @@ public:
         case 10: // PVP toggle
             break;
         case 30605: // Banker
+            cost = GuildHouseBank;
+            SpawnNPC(action, player);
+            break;
+        case 190011: // Reagent Banker
             cost = GuildHouseBank;
             SpawnNPC(action, player);
             break;
