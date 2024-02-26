@@ -69,5 +69,5 @@ INSERT INTO `guild_house_spawns` VALUES
 	(NULL, 9858, 16238.2, 16291.8, 22.9306, 1.55386, 'Neutral Auctioneer'),
 	(NULL, 2622, 16229.9, 16300.6, 13.1799, 4.17785, 'Poisons Vendor'),
 	(NULL, 190011, 16228.4, 16287, 13.176, 3.62495, 'Reagent Banker'),
-	(NULL, 190010, 16219.1, 16282.8, 13.176, 0.2124, 'Transmogrifier');
+	(NULL, 190010, 16219.1, 16282.8, 13.176, 0.2124, 'Transmogrifier'),
 	(NULL, 172234, 16214.9, 16270.7, 13.103, 4.7245, 'Levels for Gold');
