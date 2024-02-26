@@ -72,6 +72,7 @@ public:
         AddGossipItemFor(player, GOSSIP_ICON_TRAINER, "Spawn Secondary Profession Trainers", GOSSIP_SENDER_MAIN, 8);
         AddGossipItemFor(player, GOSSIP_ICON_TALK, "Spawn Sprirt Healer", GOSSIP_SENDER_MAIN, 6491, "Spawn a Spirit Healer?", GuildHouseSpirit, false);
         AddGossipItemFor(player, GOSSIP_ICON_INTERACT_1, "Spawn Transmogrifier", GOSSIP_SENDER_MAIN, 190010, "Spawn Transmogrifier?", GuildHouseObject, false);
+        AddGossipItemFor(player, GOSSIP_ICON_INTERACT_1, "Spawn Levels for Gold", GOSSIP_SENDER_MAIN, 172234, "Spawn Levels for Gold?", GuildHouseTrainer, false);
         SendGossipMenuFor(player, DEFAULT_GOSSIP_MESSAGE, creature->GetGUID());
         return true;
     }
@@ -222,6 +223,7 @@ public:
         case 26331: // Warlock
         case 26332: // Warrior
         case 29195: // Death Knight
+        case 172234: // Levels for Gold
             cost = GuildHouseTrainer;
             SpawnNPC(action, player);
             break;
